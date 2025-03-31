@@ -1,311 +1,334 @@
-    <!DOCTYPE html>
-    <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap');
-        </style>
-        <style>
-            body {
-                font-family: "Baloo 2", sans-serif;
-                ;
-                background-image: url(grid-background.png)
-            }
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap');
+    </style>
+    <style>
+        body {
+            font-family: "Baloo 2", sans-serif;
+            ;
+            background-image: url(grid-background.png)
+        }
 
-            a {
-                text-decoration: none;
-            }
+        a {
+            text-decoration: none;
+        }
 
-            .FIRST {
-                display: flex;
-                color: white;
-                gap: 20px;
-            }
+        .FIRST {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            align-items: center;
+            color: white;
+        }
 
-            .FIRST a {
-                padding: 0px;
-                display: flex;
-                color: white;
-                font-size: 120%;
-            }
+        .FIRST a {
+            text-decoration: none;
+            color: white;
+            font-size: 120%;
+            padding: 10px 15px;
+            transition: all 0.3s ease-in-out;
+        }
 
-            .logo {
-                position: relative;
-                right: 105px;
-                height: 45px;
-                background-color: rgba(255, 255, 255, );
-            }
+        .forst a:hover {
+            background-color: #ff6600;
+            border-radius: 5px;
+            color: white;
+        }
 
-            .centre {
-                padding: px;
-                color: antiquewhite;
+        .logo {
+            position: relative;
+            right: 155px;
+            height: 45px;
+            background-color: rgba(255, 255, 255, );
+        }
 
-                width: 100%;
-                height: 80vh;
+        .centre {
+            padding: px;
+            color: antiquewhite;
+
+            width: 100%;
+            height: 80vh;
 
 
-            }
+        }
 
-            .top {
-                padding: 100px;
-                display: flex;
-                justify-content: center;
+        .top {
+            padding: 100px;
+            display: flex;
+            justify-content: center;
 
-            }
-            .belowconnect{
-                position: relative;
-                left: 320px;
-                bottom: 70px;
-                width: 50vw;
-                padding: 20px;
-                display: flex;
-                
-                align-items: center;
-            }
+        }
 
-            .signup {
-                padding: 0px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
+        .belowconnect {
+            position: relative;
+            left: 320px;
+            bottom: 70px;
+            width: 50vw;
+            padding: 20px;
+            display: flex;
 
-            .button {
-                background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 100%);
-                position: relative;
-                padding: 2px;
+            align-items: center;
+        }
+
+        .signup {
+            padding: 0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .signup:hover {
+            background-color: ;
+        }
+
+        .button {
+            background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 100%);
+            position: relative;
+            padding: 2px;
+            display: inline-block;
+            border-radius: 8px;
+
+            span {
                 display: inline-block;
-                border-radius: 8px;
-
-                span {
-                    display: inline-block;
-                    background: #191919;
-                    color: white;
-                    text-transform: uppercase;
-                    padding: 21px 40px;
-                    border-radius: 5px;
-                    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-                    font-weight: 600;
-                    font-size: 15px;
-                }
+                background: #191919;
+                color: white;
+                text-transform: uppercase;
+                padding: 21px 40px;
+                border-radius: 5px;
+                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+                font-weight: 6600;
+                font-size: 15px;
             }
+        }
 
-            .topbutton {
-                background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 100%);
-                position: relative;
-                padding: px;
+        .topbutton {
+            background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 100%);
+            position: relative;
+            padding: px;
+            display: inline-block;
+            border-radius: 8px;
+
+            span {
                 display: inline-block;
-                border-radius: 8px;
-
-                span {
-                    display: inline-block;
-                    background: #191919;
-                    color: white;
-                    text-transform: uppercase;
-                    padding: 12px 30px;
-                    border-radius: 5px;
-                    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-                    font-weight: 600;
-                    font-size: 15px;
-                }
+                background: #191919;
+                color: white;
+                text-transform: uppercase;
+                padding: 12px 30px;
+                border-radius: 5px;
+                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+                font-weight: 600;
+                font-size: 15px;
             }
+        }
 
 
-            .nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 1000; /* Ensures it's above other content */
-}background: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+        .nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            /* Semi-transparent background */
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            /* Ensures it's above other content */
+        }
 
-            .topbutton {
-                display: flex;
-                gap: 10px;
-            }
+        background: rgba(0, 0, 0, 0.8);
+        /* Semi-transparent background */
 
-            .top {
-                align-items: center;
-                justify-content: center;
-                font-size: 300%;
-                font-weight: bolder;
-            }
+        .topbutton {
+            display: flex;
+            gap: 10px;
+        }
 
-            .boxes {
-                display: flex;
-                padding: 50px;
-                justify-content: space-around;
-                gap: 20px;
-            }
+        .top {
+            align-items: center;
+            justify-content: center;
+            font-size: 300%;
+            font-weight: bolder;
+        }
 
-            .box {
-                border: 2px solid;
-                display: flex;
-            
-                height: 50vh;
-                width: 50vh;
-                background-color: rgb(185, 129, 129);
-            }
+        .boxes {
+            display: flex;
+            padding: 50px;
+            justify-content: space-around;
+            gap: 20px;
+        }
 
-            .bddauppr {
-                font-size: 150%;
-                padding: 50px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-            .team {
-                padding: 5rem 2rem;
-                max-width: 1200px;
-                margin: 0 auto;
-                text-align: center;
-            }
+        .box {
+            border: 2px solid;
+            display: flex;
 
-            .team-grid {
-                display: grid;
-                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-                gap: 2rem;
-                margin-top: 3rem;
-            }
+            height: 50vh;
+            width: 50vh;
+            background-color: rgb(185, 129, 129);
+        }
 
-            .team-member {
-                background-color: white;
-                border-radius: 8px;
-                overflow: hidden;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-                transition: transform 0.3s;
-            }
+        .bddauppr {
+            font-size: 150%;
+            padding: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-            .team-member:hover {
-                transform: translateY(-5px);
-            }
+        .team {
+            padding: 5rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
 
-            .member-image {
-                width: 100%;
-                height: 250px;
-                background-color: #f1f3f4;
-                background-size: cover;
-                background-position: center;
-            }
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
 
-            .member-details {
-                padding: 1.5rem;
-            }
+        .team-member {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s;
+        }
 
-            .member-name {
-                font-size: 1.3rem;
-                margin-bottom: 0.5rem;
-            }
+        .team-member:hover {
+            transform: translateY(-5px);
+        }
 
-            .member-role {
-                color: #8d4747;
-                margin-bottom: 2rem;
-            }
+        .member-image {
+            width: 100%;
+            height: 250px;
+            background-color: #f1f3f4;
+            background-size: cover;
+            background-position: center;
+        }
 
-            .social-links {
-                display: flex;
-                justify-content: center;
-                gap: 1rem;
-            }
+        .member-details {
+            padding: 1.5rem;
+        }
 
-            .social-link {
-                color: #fafcff;
-                text-decoration: none;
-                transition: color 0.3s;
-            }
+        .member-name {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+        }
 
-            .social-link:hover {
-                color: #dbdfe5;
-            }
+        .member-role {
+            color: #8d4747;
+            margin-bottom: 2rem;
+        }
 
-            .team-grid {
-                display: grid;
-                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-                gap: 2rem;
-                margin-top: 3rem;
-            }
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
 
-            .team-member {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    width: 100%;
-    max-width: 300px; /* Prevents excessive width */
-    background-color: rgba(255, 255, 255, 0.1); /* Slight transparency */
-    border-radius: 8px;
-    overflow: hidden;
-    backdrop-filter: blur(10px);
-    transition: transform 0.3s ease-in-out;
-    text-align: center;
-}
+        .social-link {
+            color: #fafcff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
 
-.team-member:hover {
-    transform: translateY(-5px);
-}
+        .social-link:hover {
+            color: #dbdfe5;
+        }
 
-.member-image {
-    width: 100%;
-    height: 200px;
-    background-color: #ccc;
-    background-size: cover;
-    background-position: center;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-}
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
 
-.member-details {
-    padding: 20px;
-}
+        .team-member {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            width: 100%;
+            max-width: 300px;
+            /* Prevents excessive width */
+            background-color: rgba(255, 255, 255, 0.1);
+            /* Slight transparency */
+            border-radius: 8px;
+            overflow: hidden;
+            backdrop-filter: blur(10px);
+            transition: transform 0.3s ease-in-out;
+            text-align: center;
+        }
 
-.member-name {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: white;
-}
+        .team-member:hover {
+            transform: translateY(-5px);
+        }
 
-.member-role {
-    font-size: 1rem;
-    color: #ffcf00;
-    margin-bottom: 10px;
-}
+        .member-image {
+            width: 100%;
+            height: 200px;
+            background-color: #ccc;
+            background-size: cover;
+            background-position: center;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
 
-.social-links {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-}
+        .member-details {
+            padding: 20px;
+        }
 
-.social-link {
-    color: white;
-    font-size: 20px;
-    text-decoration: none;
-    transition: color 0.3s;
-}
+        .member-name {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: white;
+        }
 
-.social-link:hover {
-    color: #ffcf00;
-}
-:root {
+        .member-role {
+            font-size: 1rem;
+            color: #ffcf00;
+            margin-bottom: 10px;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .social-link {
+            color: white;
+            font-size: 20px;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .social-link:hover {
+            color: #ffcf00;
+        }
+
+        :root {
             --grid-size: 40px;
             --grid-color: rgba(255, 255, 255, 0.05);
         }
-        
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
             font-family: 'Segoe UI', Arial, sans-serif;
         }
-        
+
         body {
             background-color: #0a0a0a;
             color: white;
@@ -313,7 +336,7 @@
             overflow-x: hidden;
             position: relative;
         }
-        
+
         .grid-background {
             position: absolute;
             top: 0;
@@ -321,12 +344,12 @@
             width: 100%;
             height: 100%;
             background-size: var(--grid-size) var(--grid-size);
-            background-image: 
+            background-image:
                 linear-gradient(to right, var(--grid-color) 1px, transparent 1px),
                 linear-gradient(to bottom, var(--grid-color) 1px, transparent 1px);
             z-index: -1;
         }
-        
+
         .container {
             max-width: 1400px;
             margin: 0 auto;
@@ -336,7 +359,7 @@
             display: flex;
             flex-direction: column;
         }
-        
+
         .content-area {
             display: flex;
             justify-content: space-between;
@@ -345,38 +368,38 @@
             margin-top: 40px;
             flex: 1;
         }
-        
+
         .main-content {
             flex: 1;
             max-width: 700px;
         }
-        
+
         .title {
             font-size: 3.5rem;
             font-weight: 700;
             line-height: 1.2;
             margin-bottom: 30px;
         }
-        
+
         .description {
             font-size: 1.2rem;
             line-height: 1.6;
             color: rgba(255, 255, 255, 0.7);
             margin-bottom: 50px;
         }
-        
+
         .features {
             display: flex;
             flex-direction: column;
             gap: 20px;
         }
-        
+
         .feature-item {
             display: flex;
             align-items: center;
             gap: 15px;
         }
-        
+
         .feature-icon {
             width: 40px;
             height: 40px;
@@ -387,18 +410,18 @@
             justify-content: center;
             flex-shrink: 0;
         }
-        
+
         .feature-icon svg {
             width: 20px;
             height: 20px;
             fill: white;
         }
-        
+
         .feature-text {
             font-size: 1.25rem;
             font-weight: 500;
         }
-        
+
         .cta-button {
             display: inline-flex;
             align-items: center;
@@ -416,18 +439,18 @@
             box-shadow: 0 4px 15px rgba(107, 70, 193, 0.4);
             transition: transform 0.3s, box-shadow 0.3s;
         }
-        
+
         .cta-button:hover {
             transform: translateY(-3px);
             box-shadow: 0 6px 20px rgba(107, 70, 193, 0.6);
         }
-        
+
         .visual-area {
             flex: 1;
             position: relative;
             min-height: 500px;
         }
-        
+
         .floating-icon {
             position: absolute;
             width: 60px;
@@ -439,35 +462,35 @@
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
             animation: float 6s infinite ease-in-out;
         }
-        
+
         .icon-figma {
             background: linear-gradient(135deg, #ff7262, #f24e1e);
             top: 20%;
             right: 30%;
             animation-delay: 0s;
         }
-        
+
         .icon-cloud {
             background: linear-gradient(135deg, #0072ff, #00c6ff);
             top: 50%;
             right: 20%;
             animation-delay: 1s;
         }
-        
+
         .icon-notion {
             background: linear-gradient(135deg, #fff, #eee);
             top: 30%;
             right: 5%;
             animation-delay: 1.5s;
         }
-        
+
         .icon-flutter {
             background: linear-gradient(135deg, #42a5f5, #0d47a1);
             top: 70%;
             right: 10%;
             animation-delay: 2s;
         }
-        
+
         .icon-code {
             background: linear-gradient(135deg, #ff8a00, #e52e71);
             top: 60%;
@@ -477,16 +500,16 @@
             border-radius: 50%;
             animation-delay: 2.5s;
         }
-        
+
         .icon-discord {
             background: linear-gradient(135deg, #7289da, #5865f2);
             top: 10%;
             right: 10%;
             animation-delay: 3s;
         }
-        
-        .icon-figma svg, 
-        .icon-cloud svg, 
+
+        .icon-figma svg,
+        .icon-cloud svg,
         .icon-notion svg,
         .icon-flutter svg,
         .icon-code svg,
@@ -494,25 +517,28 @@
             width: 30px;
             height: 30px;
         }
-        
+
         .icon-code svg {
             width: 40px;
             height: 40px;
         }
-        
+
         .icon-notion svg {
             fill: #000;
         }
-        
+
         @keyframes float {
-            0%, 100% {
+
+            0%,
+            100% {
                 transform: translateY(0) rotate(0deg);
             }
+
             50% {
                 transform: translateY(-15px) rotate(5deg);
             }
         }
-        
+
         .connection-lines {
             position: absolute;
             top: 0;
@@ -522,238 +548,717 @@
             pointer-events: none;
             z-index: -1;
         }
-        
+
         @media (max-width: 992px) {
             .content-area {
                 flex-direction: column;
             }
-            
+
             .visual-area {
                 min-height: 400px;
                 margin-top: 40px;
             }
-            
+
             .title {
                 font-size: 2.8rem;
             }
         }
-        
+
         @media (max-width: 768px) {
             .title {
                 font-size: 2.2rem;
             }
-            
+
             .floating-icon {
                 width: 50px;
                 height: 50px;
             }
-            
+
             .icon-code {
                 width: 65px;
                 height: 65px;
             }
         }
-        .line{
+
+        .line {
             position: relative;
             left: 170px;
             bottom: 45px;
             height: 20px;
         }
-        </style>
 
-    </head>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            height: 100%;
+        }
 
-    <body>
-        <div class="nav">
-            <div class="FIRST">
-                <div class="forst"><a href="">HOME</a></div>
-                <div class="forst"> <a href="">About Us </a></div>
-                <div class="forst"><a href="">Events </a></div>
-                <div class="forst"> <a href="">Contact Us </a></div>
+        .container {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .content {
+            display: flex;
+            flex-grow: 1;
+            background-color: white;
+        }
+
+        .left-side {
+            flex: 1;
+            position: relative;
+            padding: 20px;
+        }
+
+        .right-side {
+            flex: 1;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .form-container {
+            max-width: 500px;
+        }
+
+        .form-field {
+            margin-bottom: 30px;
+            width: 100%;
+        }
+
+        .form-field input,
+        .form-field textarea {
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid #ccc;
+            padding: 10px 0;
+            font-size: 16px;
+            outline: none;
+        }
+
+        .form-field label {
+            color: #888;
+            font-size: 14px;
+        }
+
+        .btn-send {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 25px;
+            border-radius: 25px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .colored-dots {
+            position: absolute;
+            z-index: 0;
+        }
+
+        .dot {
+            position: absolute;
+            border-radius: 50%;
+        }
+
+        .blue-dot-sm {
+            width: 40px;
+            height: 40px;
+            background-color: #4285F4;
+            left: 0;
+            top: 200px;
+        }
+
+        .red-dot-sm {
+            width: 30px;
+            height: 30px;
+            background-color: #EA4335;
+            left: 40px;
+            top: 50px;
+        }
+
+        .green-dot-md {
+            width: 65px;
+            height: 65px;
+            background-color: #34A853;
+            left: 70px;
+            top: 230px;
+        }
+
+        .yellow-dot-lg {
+            width: 80px;
+            height: 80px;
+            background-color: #FBBC05;
+            left: 150px;
+            top: 280px;
+        }
+
+        .red-dot-lg {
+            width: 70px;
+            height: 70px;
+            background-color: #EA4335;
+            left: 270px;
+            top: 320px;
+        }
+
+        .slogan-container {
+            position: relative;
+            z-index: 1;
+            margin-top: 50px;
+            margin-left: 30px;
+        }
+
+        .slogan-red {
+            background-color: #EA4335;
+            color: white;
+            padding: 15px 25px;
+            font-size: 24px;
+            font-weight: bold;
+            display: inline-block;
+            transform: rotate(-5deg);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 10px;
+        }
+
+        .slogan-blue {
+            background-color: #4285F4;
+            color: white;
+            padding: 15px 25px;
+            font-size: 28px;
+            font-weight: bold;
+            display: inline-block;
+            transform: rotate(-5deg);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-left: 40px;
+            margin-bottom: 10px;
+        }
+
+        .slogan-green {
+            background-color: #34A853;
+            color: white;
+            padding: 10px 20px;
+            font-size: 20px;
+            font-weight: bold;
+            display: inline-block;
+            border-radius: 8px;
+            margin-left: 80px;
+        }
+
+        .footer {
+            background-color: #222;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .footer-left {
+            display: flex;
+            align-items: center;
+        }
+
+        .footer-logo {
+            margin-right: 20px;
+        }
+
+        .footer-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .footer-btn {
+            background-color: transparent;
+            color: white;
+            border: 2px solid white;
+            border-radius: 30px;
+            padding: 10px 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            cursor: pointer;
+            width: 250px;
+        }
+
+        .gdg-logo {
+            font-size: 120px;
+            font-weight: bold;
+            letter-spacing: -5px;
+        }
+
+        .msit-text {
+            font-size: 40px;
+            margin-top: -20px;
+            font-weight: bold;
+        }
+
+        /* Grid background */
+        .grid-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background-color: black;
+            background-image: linear-gradient(rgba(50, 50, 50, 0.3) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(50, 50, 50, 0.3) 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-image: url('/api/placeholder/1200/800');
+            /* Replace the placeholder with your grid background */
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin-bottom: 40px;
+            color: ;
+            font-weight: bold;
+        }
+
+        .events-header {
+            background-color: #e9e9e9;
+            padding: 12px;
+            border-radius: 25px;
+            text-align: center;
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        .events-header h2 {
+            color: #333;
+            font-size: 18px;
+        }
+
+        .yes-button {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: #d9d9d9;
+            border: none;
+            padding: 5px 15px;
+            border-radius: 15px;
+            cursor: pointer;
+        }
+
+        .event-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+
+        .event-grid-secondary {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 15px;
+        }
+
+        .event-item {
+            height: 180px;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .event-item.large {
+            height: 270px;
+            grid-column: span 2;
+        }
+
+        .event-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .dot-indicators {
+            display: flex;
+            gap: 8px;
+            margin: 10px 0 20px 0;
+        }
+
+        .dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #ccc;
+        }
+
+        .dot.active {
+            background-color: #4CAF50;
+        }
+
+        .dot.secondary {
+            background-color: #2196F3;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="nav">
+        <div class="FIRST">
+            <div class="forst"><a href="">Home</a></div>
+            <div class="forst"> <a href="">About Us </a></div>
+            <div class="forst"><a href="">Events </a></div>
+            <div class="forst"> <a href="">Contact Us </a></div>
 
 
 
 
+        </div>
+        <div class="second">
+            <img class="logo" src="logo.png" alt="alt_text">
+        </div>
+
+        <div class="topbutton">
+
+
+            <div class="sign">
+                <a href="#0" class="button">
+                    <span> Sign In</span>
+                </a>
             </div>
-            <div class="second">
-                <img class="logo" src="logo.png" alt="alt_text">
+
+        </div>
+    </div>
+
+    <div class="front">
+
+        <Div class="centre">
+            <div class="top">
+
+                Connect With Developers
+                <br>
+                At GDGOC IET DAVV
+            </div>
+            <div class="line">
+                <img class="line" src="curve.webp" alt="alt_text">
+            </div>
+            <div class="belowconnect">
+                At GDGOC IET DAVV, we aim to learn, teach and grow. Together, the place where creative minds come
+                together to build something amazing
             </div>
 
-            <div class="topbutton">
+            <div class="signup">
+                <a href="#0" class="button">
+                    <span> Sign Up</span>
+                </a>
+            </div>
 
+            <div class="bddauppr">
+                ELEVATE YOUR SKILLS IN
+            </div>
 
-                <div class="sign">
-                    <a href="#0" class="button">
-                        <span> Sign In</span>
-                    </a>
+            <div class="boxes">
+                <div class="team-member">
+
+                    <div class="member-details">
+                        <h3 class="member-name">Web Development</h3>
+                        <p class="member-role">Bridging the gap between vision and reality, web development includes
+                            translating creative concepts into dynamic online experiences in the form of websites,
+                            driving user engagement and shaping the digital landscape.</p>
+                        <div class="social-links">
+                            <a href="#" class="social-link">L</a>
+                            <a href="#" class="social-link">T</a>
+                            <a href="#" class="social-link">G</a>
+                        </div>
+                    </div>
+                              
+                </div>
+                <div class="team-member">
+
+                    <div class="member-details">
+                        <h3 class="member-name">Competitive Programming</h3>
+                        <p class="member-role">Hone your logic and algorithm design skills in the arena of competitive
+                            programming! This intense challenge aims to push the boundaries of software development,
+                            shaping the future of efficient and robust code.</p>
+                        <div class="social-links">
+                            <a href="#" class="social-link">L</a>
+                            <a href="#" class="social-link">T</a>
+                            <a href="#" class="social-link">G</a>
+                        </div>
+                    </div>
+                              
+                </div>
+                <div class="team-member">
+
+                    <div class="member-details">
+                        <h3 class="member-name">Cloud Development</h3>
+                        <p class="member-role">Embrace the limitless flexibility and scalability of the cloud via
+                            migrating applications to the vast online network, empowering businesses with global reach
+                            and agile infrastructure.</p>
+                        <div class="social-links">
+                            <a href="#" class="social-link">L</a>
+                            <a href="#" class="social-link">T</a>
+                            <a href="#" class="social-link">G</a>
+                        </div>
+                    </div>
+                              
+                </div>
+            </div>
+
+            <div class="grid-background"></div>
+
+            <div class="container">
+                <div class="content-area">
+                    <div class="main-content">
+                        <h1 class="title">Unleash Innovation Through Collaborative Learning and Support</h1>
+
+                        <p class="description">
+                            Through collaboration in Azure Cloud, Android Studio, Web Development, Generative AI, and
+                            Machine Learning, we empower teams to enhance their skills and work smarter together.
+                        </p>
+
+                        <div class="features">
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
+                                            stroke="white" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <span class="feature-text">Cross-Disciplinary Workshops</span>
+                            </div>
+
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
+                                            stroke="white" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <span class="feature-text">Technical Support for College Clubs</span>
+                            </div>
+
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
+                                            stroke="white" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <span class="feature-text">Innovation and Collaboration</span>
+                            </div>
+                        </div>
+
+                        <a href="#roadmap" class="cta-button">View Details</a>
+                    </div>
+
+                    <div class="visual-area">
+                        <div class="connection-lines">
+                            <!-- SVG connections would go here in a more complex implementation -->
+                        </div>
+
+                        <div class="floating-icon icon-figma">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38 57" fill="none">
+                                <path fill="#fff" d="M19 28.5a9.5 9.5 0 1 1 19 0 9.5 9.5 0 0 1-19 0z" />
+                                <path fill="#fff"
+                                    d="M19 9.5a9.5 9.5 0 0 1 9.5-9.5 9.5 9.5 0 0 1 9.5 9.5 9.5 9.5 0 0 1-9.5 9.5H19V9.5z" />
+                                <path fill="#fff" d="M0 28.5a9.5 9.5 0 0 1 9.5-9.5H19v19H9.5a9.5 9.5 0 0 1-9.5-9.5z" />
+                                <path fill="#fff" d="M0 9.5a9.5 9.5 0 0 1 9.5-9.5H19v19H9.5A9.5 9.5 0 0 1 0 9.5z" />
+                                <path fill="#fff" d="M0 47.5a9.5 9.5 0 0 1 9.5-9.5H19v9.5a9.5 9.5 0 1 1-19 0z" />
+                            </svg>
+                        </div>
+
+                        <div class="floating-icon icon-cloud">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+                            </svg>
+                        </div>
+
+                        <div class="floating-icon icon-notion">
+                            <svg viewBox="0 0 120 126" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M 20.8 19.8 L 98.5 19.8 L 106.5 11.8 L 106.5 112.6 L 98.5 120.6 L 20.8 120.6 L 12.8 112.6 L 12.8 27.8 L 20.8 19.8 Z"
+                                    fill="#000" />
+                                <path
+                                    d="M 38.7 47.3 L 38.7 105.3 L 33.8 109.6 L 25.7 109.6 L 25.7 42.3 L 42.9 42.3 L 89.5 105.4 L 89.5 42.8 L 95 37.3 L 102.5 37.3 L 102.5 109.7 L 85.3 109.7 L 38.7 47.3 Z"
+                                    fill="#fff" />
+                            </svg>
+                        </div>
+
+                        <div class="floating-icon icon-flutter">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 317" fill="white">
+                                <path
+                                    d="M157.666 0L0 157.667l48.8 48.8L255.268 0h-97.602zm0 157.667H97.85l59.816 59.817 48.801-48.801-48.801-11.016zm-59.816 107.77l59.816 59.798 108.618-108.616-59.816-59.799-108.618 108.617z" />
+                            </svg>
+                        </div>
+
+                        <div class="floating-icon icon-code">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg>
+                        </div>
+
+                        <div class="floating-icon icon-discord">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 127.14 96.36" fill="white">
+                                <path
+                                    d="M107.7 8.07A105.15 105.15 0 0 0 81.47 0a72.06 72.06 0 0 0-3.36 6.83 97.68 97.68 0 0 0-29.11 0A72.37 72.37 0 0 0 45.64 0a105.89 105.89 0 0 0-26.25 8.09C2.79 32.65-1.71 56.6.54 80.21a105.73 105.73 0 0 0 32.17 16.15 77.7 77.7 0 0 0 6.89-11.11 68.42 68.42 0 0 1-10.85-5.18c.91-.66 1.8-1.34 2.66-2a75.57 75.57 0 0 0 64.32 0c.87.71 1.76 1.39 2.66 2a68.68 68.68 0 0 1-10.87 5.19 77 77 0 0 0 6.89 11.1 105.25 105.25 0 0 0 32.19-16.14c2.64-27.38-4.51-51.11-18.9-72.15ZM42.45 65.69C36.18 65.69 31 60 31 53s5-12.74 11.43-12.74S54 46 53.89 53s-5.05 12.69-11.44 12.69Zm42.24 0C78.41 65.69 73.25 60 73.25 53s5-12.74 11.44-12.74S96.23 46 96.12 53s-5.04 12.69-11.43 12.69Z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <h1>EVENTS</h1>
+
+                <div class="dot-indicators">
+                    <div class="dot active"></div>
+                    <div class="dot secondary"></div>
                 </div>
 
+                <div class="events-header">
+                    <h2>Wanna Explore Our Events?</h2>
+                    <button class="yes-button">Yes</button>
+                </div>
+
+                <div class="event-grid">
+                    <!-- First row -->
+                    <div class="event-item large">
+                        <!-- Replace with your own image -->
+                    </div>
+                    <div class="event-item large">
+                        <!-- Replace with your own image -->
+                    </div>
+                </div>
+
+                <div class="event-grid">
+                    <!-- Second row -->
+                    <div class="event-item">
+                        <!-- Replace with your own image -->
+                    </div>
+                    <div class="event-item large">
+                        <!-- Replace with your own image -->
+                    </div>
+                    <div class="event-item">
+                        <!-- Replace with your own image -->
+                    </div>
+                </div>
+
+                <div class="event-grid-secondary">
+                    <!-- Third row -->
+                    <div class="event-item">
+                        <!-- Replace with your own image -->
+                    </div>
+                    <div class="event-item">
+                        <!-- Replace with your own image -->
+                    </div>
+                    <div class="event-item">
+                        <!-- Replace with your own image -->
+                    </div>
+                    <div class="event-item">
+                        <!-- Replace with your own image -->
+                    </div>
+                    <div class="event-item">
+                        <!-- Replace with your own image -->
+                    </div>
+                </div>
+            </div>
+</body>
+
+<div class="grid-background"></div>
+<div class="container">
+    <div class="content">
+        <div class="left-side">
+            <div class="colored-dots">
+                <div class="dot blue-dot-sm"></div>
+                <div class="dot red-dot-sm"></div>
+                <div class="dot green-dot-md"></div>
+                <div class="dot yellow-dot-lg"></div>
+                <div class="dot red-dot-lg"></div>
+            </div>
+
+            <div class="slogan-container">
+                <div class="slogan-red">ASK ANY DOUBT</div>
+                <div class="slogan-blue">HAVE A QUESTION?</div>
+                <div class="slogan-green">HERE TO HELP</div>
             </div>
         </div>
 
-        <div class="front">
-
-            <Div class="centre">
-                <div class="top">
-
-                    Connect With Developers
-                    <br>
-                    At GDGOC IET DAVV
-                </div>
-                <div class="line">
-                    <img class="line" src="curve.webp" alt="alt_text">
-                </div>
-                <div class="belowconnect">
-                    At GDGOC IET DAVV, we aim to learn, teach and grow. Together, the place where creative minds come together to build something amazing
-                </div>
-             
-                <div class="signup">
-                    <a href="#0" class="button">
-                        <span> Sign Up</span>
-                    </a>
+        <div class="right-side">
+            <div class="form-container">
+                <div class="form-field">
+                    <input type="text" id="fullname" placeholder="Full Name">
                 </div>
 
-                <div class="bddauppr">
-                    ELEVATE YOUR SKILLS IN
+                <div class="form-field">
+                    <input type="email" id="email" placeholder="Email">
                 </div>
 
-                <div class="boxes">
-                    <div class="team-member">
-                        
-                        <div class="member-details">
-                            <h3 class="member-name">Web Development</h3>
-                            <p class="member-role">Bridging the gap between vision and reality, web development includes translating creative concepts into dynamic online experiences in the form of websites, driving user engagement and shaping the digital landscape.</p>
-                            <div class="social-links">
-                                <a href="#" class="social-link">L</a>
-                                <a href="#" class="social-link">T</a>
-                                <a href="#" class="social-link">G</a>
-                            </div>
-                        </div>
-                                  
-                    </div>
-                    <div class="team-member">
-                    
-                        <div class="member-details">
-                            <h3 class="member-name">Competitive Programming</h3>
-                            <p class="member-role">Hone your logic and algorithm design skills in the arena of competitive programming! This intense challenge aims to push the boundaries of software development, shaping the future of efficient and robust code.</p>
-                            <div class="social-links">
-                                <a href="#" class="social-link">L</a>
-                                <a href="#" class="social-link">T</a>
-                                <a href="#" class="social-link">G</a>
-                            </div>
-                        </div>
-                                  
-                    </div>
-                    <div class="team-member">
-            
-                        <div class="member-details">
-                            <h3 class="member-name">Cloud Development</h3>
-                            <p class="member-role">Embrace the limitless flexibility and scalability of the cloud via migrating applications to the vast online network, empowering businesses with global reach and agile infrastructure.</p>
-                            <div class="social-links">
-                                <a href="#" class="social-link">L</a>
-                                <a href="#" class="social-link">T</a>
-                                <a href="#" class="social-link">G</a>
-                            </div>
-                        </div>
-                                  
-                    </div>
+                <div class="form-field">
+                    <input type="text" id="message" placeholder="Message">
                 </div>
 
-                <div class="grid-background"></div>
-    
-                <div class="container">
-                    <div class="content-area">
-                        <div class="main-content">
-                            <h1 class="title">Unleash Innovation Through Collaborative Learning and Support</h1>
-                            
-                            <p class="description">
-                                Through collaboration in Azure Cloud, Android Studio, Web Development, Generative AI, and
-                                Machine Learning, we empower teams to enhance their skills and work smarter together.
-                            </p>
-                            
-                            <div class="features">
-                                <div class="feature-item">
-                                    <div class="feature-icon">
-                                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                    </div>
-                                    <span class="feature-text">Cross-Disciplinary Workshops</span>
-                                </div>
-                                
-                                <div class="feature-item">
-                                    <div class="feature-icon">
-                                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                    </div>
-                                    <span class="feature-text">Technical Support for College Clubs</span>
-                                </div>
-                                
-                                <div class="feature-item">
-                                    <div class="feature-icon">
-                                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                    </div>
-                                    <span class="feature-text">Innovation and Collaboration</span>
-                                </div>
-                            </div>
-                            
-                            <a href="#roadmap" class="cta-button">View Details</a>
-                        </div>
-                        
-                        <div class="visual-area">
-                            <div class="connection-lines">
-                                <!-- SVG connections would go here in a more complex implementation -->
-                            </div>
-                            
-                            <div class="floating-icon icon-figma">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38 57" fill="none">
-                                    <path fill="#fff" d="M19 28.5a9.5 9.5 0 1 1 19 0 9.5 9.5 0 0 1-19 0z"/>
-                                    <path fill="#fff" d="M19 9.5a9.5 9.5 0 0 1 9.5-9.5 9.5 9.5 0 0 1 9.5 9.5 9.5 9.5 0 0 1-9.5 9.5H19V9.5z"/>
-                                    <path fill="#fff" d="M0 28.5a9.5 9.5 0 0 1 9.5-9.5H19v19H9.5a9.5 9.5 0 0 1-9.5-9.5z"/>
-                                    <path fill="#fff" d="M0 9.5a9.5 9.5 0 0 1 9.5-9.5H19v19H9.5A9.5 9.5 0 0 1 0 9.5z"/>
-                                    <path fill="#fff" d="M0 47.5a9.5 9.5 0 0 1 9.5-9.5H19v9.5a9.5 9.5 0 1 1-19 0z"/>
-                                </svg>
-                            </div>
-                            
-                            <div class="floating-icon icon-cloud">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
-                                </svg>
-                            </div>
-                            
-                            <div class="floating-icon icon-notion">
-                                <svg viewBox="0 0 120 126" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M 20.8 19.8 L 98.5 19.8 L 106.5 11.8 L 106.5 112.6 L 98.5 120.6 L 20.8 120.6 L 12.8 112.6 L 12.8 27.8 L 20.8 19.8 Z" fill="#000"/>
-                                    <path d="M 38.7 47.3 L 38.7 105.3 L 33.8 109.6 L 25.7 109.6 L 25.7 42.3 L 42.9 42.3 L 89.5 105.4 L 89.5 42.8 L 95 37.3 L 102.5 37.3 L 102.5 109.7 L 85.3 109.7 L 38.7 47.3 Z" fill="#fff"/>
-                                </svg>
-                            </div>
-                            
-                            <div class="floating-icon icon-flutter">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 317" fill="white">
-                                    <path d="M157.666 0L0 157.667l48.8 48.8L255.268 0h-97.602zm0 157.667H97.85l59.816 59.817 48.801-48.801-48.801-11.016zm-59.816 107.77l59.816 59.798 108.618-108.616-59.816-59.799-108.618 108.617z"/>
-                                </svg>
-                            </div>
-                            
-                            <div class="floating-icon icon-code">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <polyline points="16 18 22 12 16 6"></polyline>
-                                    <polyline points="8 6 2 12 8 18"></polyline>
-                                </svg>
-                            </div>
-                            
-                            <div class="floating-icon icon-discord">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 127.14 96.36" fill="white">
-                                    <path d="M107.7 8.07A105.15 105.15 0 0 0 81.47 0a72.06 72.06 0 0 0-3.36 6.83 97.68 97.68 0 0 0-29.11 0A72.37 72.37 0 0 0 45.64 0a105.89 105.89 0 0 0-26.25 8.09C2.79 32.65-1.71 56.6.54 80.21a105.73 105.73 0 0 0 32.17 16.15 77.7 77.7 0 0 0 6.89-11.11 68.42 68.42 0 0 1-10.85-5.18c.91-.66 1.8-1.34 2.66-2a75.57 75.57 0 0 0 64.32 0c.87.71 1.76 1.39 2.66 2a68.68 68.68 0 0 1-10.87 5.19 77 77 0 0 0 6.89 11.1 105.25 105.25 0 0 0 32.19-16.14c2.64-27.38-4.51-51.11-18.9-72.15ZM42.45 65.69C36.18 65.69 31 60 31 53s5-12.74 11.43-12.74S54 46 53.89 53s-5.05 12.69-11.44 12.69Zm42.24 0C78.41 65.69 73.25 60 73.25 53s5-12.74 11.44-12.74S96.23 46 96.12 53s-5.04 12.69-11.43 12.69Z"/>
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <button class="btn-send">Send Message</button>
+            </div>
+        </div>
+    </div>
 
+    <div class="footer">
+        <div class="footer-left">
+            <div class="footer-logo">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22C17.5 22 22 17.5 22 12Z"
+                        fill="#4285F4" stroke="#4285F4" />
+                    <path d="M12 22C17.5 22 22 17.5 22 12" stroke="#34A853" stroke-width="4" />
+                    <path d="M12 22C6.5 22 2 17.5 2 12" stroke="#FBBC05" stroke-width="4" />
+                    <path d="M2 12C2 6.5 6.5 2 12 2" stroke="#EA4335" stroke-width="4" />
+                </svg>
+            </div>
 
-    </body>
+            <div class="footer-buttons">
+                <button class="footer-btn">
+                    JOIN OUR WHATSAPP GROUP
+                    <span>→</span>
+                </button>
 
-    </html>
+                <button class="footer-btn">
+                    BACK TO TOP
+                    <span>↑</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="footer-right">
+            <div class="gdg-logo">GDG</div>
+            <div class="msit-text">IET DAVV</div>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
